@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Marcin Pezda</title>
+		<link rel="stylesheet" href="homeCss.css">
+		<link rel="stylesheet" href="meCss.css">
+		<link rel="stylesheet" href="portfolioCss.css">
+		<link rel="stylesheet" href="contactCss.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+		<script src="PortfolioJS.js"></script>
+	</head>
+
+	<body>
+		<div class="preloader"></div>
+
+<!--Home ////////////////////////////////////////////////////////-->
+ 
+		<div class="container-fluid containerNoMargin" id="containerHome">
+			<div class="divStart">
+				<div class="row" id="rowMenu">
+					<button type="button" id="menuButton">
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+					</button>
+					<nav class="navbar navbar-custom navbar-static-top">
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a id="navOMnie" class="fontStyle" href="#containerMe">O mnie</a></li>
+								<li><a id="navPortfolio" class="fontStyle" href="#containerPortfolio">Portfolio</a></li>
+								<li><a id="navKontakt" class="fontStyle" href="#containerContact">Kontakt</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>		
+			</div>
+			<div class="rowStartAnime">
+				<div class="itsMarcin">Marcin Pezda</div>
+				<div class="itsFront">Front</div>
+				<div class="itsPause">-</div>
+				<div class="itsEnd">End</div>
+				<div class="itsDeveloper">Developer</div>		
+			</div>
+		</div>
+
+<!--Me ////////////////////////////////////////////////////////-->
+
+		<div class="container-fluid containerNoMargin" id="containerMe">
+			<div class="divMeText">
+				<div class="divMe"></div>
+				<div class="divPhoto">
+					<img src="images/photoMe.jpg" alt="Me" id="photoMe">
+					<h1><b>Cześć!</b><br></h1> 
+					<article id="articleMe">
+						<span id="spanAboutMe">Mam na imię Marcin. Programuję i tworzę strony internetowe, co potrafi dać dużo satysfakcji!</span>
+					</article>
+				</div>			
+				<div class="stringSkill">
+					<span class="spanSkill">
+						<span class="spanString" >HTML5</span>
+						<img src="images/html5icon.png" alt="">
+					</span>
+					<span class="spanSkill">
+						<span class="spanString" >CSS3</span>
+						<img id="dd" src="images/icss3.png" alt="">
+					</span>
+					<span class="spanSkill">
+						<span class="spanString" >Bootstrap</span>
+						<img src="images/bootstrap-icon.svg" alt="">
+					</span>
+					<span class="spanSkill">
+						<span class="spanString" >jQuery</span>
+						<img src="images/jquery-icon.png" alt="">
+					</span>
+				</div>
+			</div>
+		</div>	
+
+<!--Portfolio ////////////////////////////////////////////////////////-->
+
+		<div class="container-fluid containerNoMargin" id="containerPortfolio">
+		 	<div id="divCarousel">
+				<div id="myCarousel" class="carousel slide divCarouselAnime" data-interval="false">
+			   		<!-- Indicators -->
+			   		<ol class="carousel-indicators">
+			   		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			   		  <li data-target="#myCarousel" data-slide-to="1"></li>
+			   		</ol>
+			   		<!-- Wrapper for slides -->
+			   		<div class="carousel-inner">
+				     	<div class="item active">
+				     		<div class="divPhotoPortfolio" id="divPhotoPortfolio1">
+				     			<img class="photoPortfolioAll" src="images/Projekt1.jpg" alt="Projekt 1">
+				     			<div class="photoPortfolioHover">
+				     				<div class="photoPortfolioText">Projekt 1</div>
+				     			</div>
+				     		</div>
+				     		<div class="divPhotoPortfolio divPhotoPortfolioMiddle" id="divPhotoPortfolio2">
+				     			<img class="photoPortfolioAll" src="images/Projekt2.jpg" alt="Projekt 2">
+				     			<div class="photoPortfolioHover">
+				     				<div class="photoPortfolioText">Projekt 2</div>
+				     			</div>
+				     		</div>
+				     		<div class="divPhotoPortfolio" id="divPhotoPortfolio3">
+				     			<img class="photoPortfolioAll" src="images/Projekt3.jpg" alt="Projekt 3">
+				     			<div class="photoPortfolioHover">
+				     				<div class="photoPortfolioText">Projekt 3</div>
+				     			</div>
+				     		</div>					     	
+				    	</div>
+			     		 <div class="item">
+			     		 	<div class="divPhotoPortfolio">
+				     			<img class="photoPortfolioAll" src="images/Projekt4.jpg" alt="Projekt 4">
+				     			<div class="photoPortfolioHover">
+				     				<div class="photoPortfolioText">Projekt 4</div>
+				     			</div>
+				     		</div>
+				     		<div class="divPhotoPortfolio divPhotoPortfolioMiddle">
+				     			<img class="photoPortfolioAll" src="images/Projekt5.jpg" alt="Projekt 5">
+				     			<div class="photoPortfolioHover">
+				     				<div class="photoPortfolioText">Projekt 5</div>
+				     			</div>
+				     		</div>
+				     		<div class="divPhotoPortfolio">
+				     			<img class="photoPortfolioAll" src="images/Projekt6.jpg" alt="Projekt 6">
+				     			<div class="photoPortfolioHover">
+				     				<div class="photoPortfolioText">Projekt 6</div>
+				     			</div>
+				     		</div>					       	
+			      		</div>
+			    	</div>
+			    	<!-- Left and right controls -->
+			   		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			      		<span class="glyphicon glyphicon-chevron-left"></span>
+			    	</a>
+			    	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			      		<span class="glyphicon glyphicon-chevron-right"></span>
+			    	</a>
+			 	 </div>
+		  	</div>
+		</div>
+
+<!--Contact ////////////////////////////////////////////////////////-->
+
+		<div class="container" id="containerContact">
+			<div class="divContactLeft">
+				<div>
+					<span id="contactMe">Marcin Pezda</span><br>
+					<span class="contactAddress">tel. 724-942-326</span><br>
+					<span class="contactAddress">30-348 Kraków</span><br>
+					<span class="contactAddress">ul. Grota-Roweckiego 37</span><br><br>
+					<a href="https://www.facebook.com/marcin.pezda.5" target="_blank">
+						<img class="contactMedia" src="images/icon-facebook.png" alt="Facebook">
+					</a>
+					<a href="https://github.com/mpezda" target="_blank">
+						<img class="contactMedia" src="images/logoGitHub.png" alt="GitHub">
+					</a>
+					<a href="https://www.linkedin.com/in/marcin-pezda-33a50b119/" target="_blank">
+						<img class="contactMedia" src="images/logo-linkedin.png" alt="LinkedIn">
+					</a>				
+				</div>
+			</div>
+			<div class="divContactRight">
+				<form id="contactForm" action="#" method="post" enctype="text/plain">
+ 				 	<div>
+ 				 		<h2>Napisz do mnie: </h2><br>
+						<span id="spanName">Imię </span><input class="contactInput contactInputSmall1" type="text" name="contactName"><br><br>
+						<span>Email </span><input class="contactInput contactInputSmall2" type="text" name="contactEmail"><br><br>
+						<span id="spanMessage">Wiadomość</span><textarea name="comment" form="contactForm" placeholder="Co u Ciebie słychać?"></textarea><br><br>
+						<input id="contactSubmit" class="btn btn-success" type="submit" value="Wyślij" disabled>
+					</div>
+				</form>			
+			</div>
+		</div>
+	</body>
+</html>
