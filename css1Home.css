@@ -1,0 +1,224 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: white url(images/klepsydra.gif) no-repeat center center;
+}
+#containerHome{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+div.containerNoMargin{
+	margin: 0; 
+	padding: 0;
+	height: 100vh;
+}
+.divStart{
+	background-image: url(images/write.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+/*Edge support for width*/
+@supports ( -ms-accelerator:true ) 
+{
+    html{
+         overflow-x: hidden;     
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+/*Ie 10/11 support for width*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+{
+    html{
+        overflow-x: hidden;     
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+.divStart #rowMenu{
+	z-index: 2;
+	position: fixed;	
+	margin: auto;
+    width: 100%;
+}
+.navbar-custom{
+	background-color: black;
+	margin-top: 20px;
+	opacity: 0.5;
+	display:table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fontStyle{
+	color: white;
+	background-color: black;
+	font-size: 1.5em;
+	letter-spacing: 9px;
+}
+.fontStyle:hover{
+	color: black;
+	box-shadow: 20px 20px 20px black;
+}
+.glyphicon-menu-hamburger{
+	color: white;
+	margin-top: 2px;
+	font-size: 2em;
+}
+.rowStartAnime{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;	
+	z-index: 1;	
+}
+.rowStartAnime .itsMarcin{
+	color: white;
+	font-family: 'Orator Std', sans-serif;
+	font-size: 400%;
+	letter-spacing: 9px;
+}
+.rowStartAnime .itsFront{
+  	display: inline-block;
+  	max-width: 500px;
+	color: #21a2a7;
+	font-family: 'Annie Use Your Telescope', sans-serif; 
+	font-size: 350%;
+	letter-spacing: 3px;
+	text-align: center;
+    margin-left: 0px;
+    margin-right: 10px;
+    animation: changeOpacity 2s, changeScale 0.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 3s;
+    animation-iteration-count: 1; 
+    -webkit-transition: opacity 1s, box-shadow 1s, color 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s, box-shadow 1s, color 1s, height 1s, transform 1s; 
+}
+.rowStartAnime .itsEnd{
+	display: inline-block;
+  	max-width: 500px;
+	color: #21a2a7;
+	font-family: 'Annie Use Your Telescope', sans-serif; 
+	font-size: 350%;
+	letter-spacing: 3px;
+	text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    animation: changeOpacity 2s, changeScale 0.7s;
+    animation-fill-mode: backwards;
+    animation-delay: 4s;
+    animation-iteration-count: 1; 
+    -webkit-transition: opacity 1s, box-shadow 1s, color 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s, box-shadow 1s, color 1s, height 1s, transform 1s;
+}
+.rowStartAnime .itsDeveloper{
+	display: inline-block;
+  	max-width: 500px;
+	color: #21a2a7;
+	font-family: 'Annie Use Your Telescope', sans-serif; 
+	font-size: 350%;
+	letter-spacing: 3px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    animation: changeOpacity 2s, changeScale 0.7s;
+    animation-fill-mode: backwards;
+    animation-delay: 5s;
+    animation-iteration-count: 1; 
+    -webkit-transition: opacity 1s, box-shadow 1s, color 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s, box-shadow 1s, color 1s, height 1s, transform 1s;
+}
+.rowStartAnime .itsPause{
+	position: absolute;
+	bottom: -12px;
+	display: inline-block;
+  	max-width: 500px;
+	color: #21a2a7;
+    opacity: 0.9;
+	font-family: 'Annie Use Your Telescope', sans-serif; 
+	font-size: 600%;
+	letter-spacing: 3px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    animation: changeOpacity 1s, rotatePause 4s;
+    animation-fill-mode: backwards;
+    animation-delay: 6s;
+    animation-iteration-count: 1; 
+    animation-timing-function: ease-out;
+    -webkit-transition: opacity 1s, box-shadow 1s, color 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s, box-shadow 1s, color 1s, height 1s, transform 1s;
+}
+.rowStartAnime .itsFront:hover, .rowStartAnime .itsEnd:hover,
+.rowStartAnime .itsDeveloper:hover{
+	opacity: 0.9;
+	transform: scale(1.2, 1.2);
+}
+@keyframes changeOpacity{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes changeScale{
+	90% {transform: translate(0px, 100px) scale(1.6, 1.6);} 
+}
+@keyframes rotatePause{
+	 0% {transform: translate(-800%, -300%) scale(5, 5) rotate(5000deg);} 
+}
+@media screen and (max-width: 550px){
+	.rowStartAnime{
+		display: none;
+	}
+}
+@media screen and (max-height: 450px){
+	.rowStartAnime{
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	
+	.navbar-custom{
+		display: inline;
+		margin: 20px;
+		width: 100%;
+		opacity: 1.0;
+	}
+	#menuButton{
+		background: none;
+		border: none;
+		width: 60px;
+		height: 60px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	#menuButton:hover .glyphicon-menu-hamburger{color: #59bfc3;}
+
+	#menuButton:hover{outline: none;}
+	
+	.navbar-collapse{
+	background: none;
+	border: none;
+	opacity: 0.5;
+	}
+	.fontStyle:hover{
+		box-shadow: none;
+	}
+	.rowStartAnime .itsFront, .rowStartAnime .itsPause, 
+	.rowStartAnime .itsEnd, .rowStartAnime .itsDeveloper{
+		animation: none;
+	}
+}
+@media screen and (min-width: 768px){
+	#menuButton{
+		display: none;
+	}
+}

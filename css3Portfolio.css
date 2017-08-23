@@ -1,0 +1,109 @@
+/*DIV Portfolio //////////////////////////////////////////////////////////////////*/
+
+#containerPortfolio{
+	background-color: #21a2a7;
+	position: relative;
+}
+#divCarousel {
+	height: 50%;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 1px 1px 3px 3px #067c7f;
+	background-color: #34ced3;
+	visibility: hidden;
+}
+#myCarousel .carousel-indicators {height: 0;}
+
+#myCarousel .carousel-control{
+	background: none;
+	width: 80px;
+}
+#myCarousel, .carousel-inner, .item{
+	height: 100%;
+	width: 100%;
+}
+#myCarousel .carousel-inner .item{
+	padding: 40px 70px 40px 70px;
+	text-align: center;
+}
+#myCarousel .carousel-inner .item .divPhotoPortfolio{
+	height: 100%; 
+	width: 30%; 
+	display: inline-block;
+	box-shadow: 1px 1px 3px 3px #067c7f;
+	position: relative;
+}
+#myCarousel .carousel-inner .item .divPhotoPortfolioMiddle{
+	margin-left: 3%; 
+	margin-right: 3%;
+}
+#myCarousel .carousel-inner .item .divPhotoPortfolio .photoPortfolioAll{
+	height: 100%;
+	width: 100%;
+}
+.photoPortfolioHover{
+	position: absolute;
+	top: 0;
+	background: black;
+	height: 0%;
+	width: 100%;
+	opacity: 0.5;
+	overflow: hidden;
+	transition: height 0.7s;
+}
+.divPhotoPortfolio:hover .photoPortfolioHover{height: 100%;}
+
+.photoPortfolioHover .photoPortfolioText{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 150%;
+	letter-spacing: 3px;
+}
+@keyframes showPhoto{
+	from{width: 0; height: 0; opacity: 0;}
+	to{width: 30%; height: 100%; opacity: 1.0;}
+}
+#divPhotoPortfolio1.start{
+	animation: showPhoto 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+#divPhotoPortfolio2.start{
+	animation: showPhoto 1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+#divPhotoPortfolio3.start{
+	animation: showPhoto 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: backwards;
+}
+@media screen and (max-width: 1200px){
+	#divCarousel{height: 45%;}
+}
+@media screen and (max-width: 992px){
+	#divCarousel{height: 40%;}
+}
+@media screen and (max-width: 768px){
+	#divCarousel{
+		height: 100%;
+		background-color: #21a2a7;
+		box-shadow: none;
+		visibility: visible;
+	}
+	#myCarousel .carousel-inner .item .divPhotoPortfolio{
+		width: 60%;
+		height: 30%;
+		animation: none;
+	}
+	#myCarousel .carousel-inner .item .divPhotoPortfolioMiddle{margin: 3% 0% 3% 0%;}
+}
+@media screen and (max-width: 480px){
+	#myCarousel .carousel-inner .item .divPhotoPortfolio{width: 100%;}
+}
