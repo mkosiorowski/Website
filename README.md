@@ -1,2 +1,2 @@
 # Portfolio_Website
-HTML, CSS, JavaScript, jQuery
+HTML, CSS, JavaScript, jQueryy
